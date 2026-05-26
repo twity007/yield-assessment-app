@@ -7,6 +7,10 @@ body {
     padding: 20px;
     display: flex;
     justify-content: center;
+    background-image: url('https://img.goodfon.ru/wallpaper/nbig/e/8c/rzhanoe-pole-kolosia-rozh-zlaki-nebo.webp'); /* Укажите путь к вашему файлу */
+    background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Предотвращает повторение изображения */
 }
 
 .container {
