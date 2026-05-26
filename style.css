@@ -1,25 +1,51 @@
 /* style.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
     color: #333;
     margin: 0;
     padding: 20px;
     display: flex;
     justify-content: center;
-    background-image: url('https://img.goodfon.ru/wallpaper/nbig/e/8c/rzhanoe-pole-kolosia-rozh-zlaki-nebo.webp'); /* Укажите путь к вашему файлу */
-    background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
-    background-position: center; /* Центрирует изображение */
-    background-repeat: no-repeat; /* Предотвращает повторение изображения */
+
+    /* --- Базовые настройки фона (для мобильных устройств или как запасной вариант) --- */
+    background-image: url('images/field_background_small.jpg'); /* Начинаем с маленького изображения */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фиксирует фон, чтобы он не смещался при скролле */
+}
+
+/* --- Медиазапрос для средних экранов (планшеты) --- */
+@media (min-width: 768px) {
+    body {
+        background-image: url('images/field_background_medium.jpg'); /* Среднее изображение */
+        /* background-size: cover; */ /* Можно оставить cover, или настроить иначе */
+        /* background-position: center; */
+        /* background-repeat: no-repeat; */
+        /* background-attachment: fixed; */
+    }
+}
+
+/* --- Медиазапрос для больших экранов (десктопы) --- */
+@media (min-width: 1200px) {
+    body {
+        background-image: url('images/field_background.jpg'); /* Большое изображение */
+        /* background-size: cover; */
+        /* background-position: center; */
+        /* background-repeat: no-repeat; */
+        /* background-attachment: fixed; */
+    }
 }
 
 .container {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85); /* Полупрозрачный фон для лучшей читаемости */
     width: 100%;
     max-width: 600px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
 }
 
 header {
@@ -54,7 +80,7 @@ input, select {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+    box-sizing: border-box;
 }
 
 input:focus, select:focus {
