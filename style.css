@@ -8,7 +8,7 @@ body {
     justify-content: center;
 
     /* --- Базовые настройки фона (для мобильных устройств или как запасной вариант) --- */
-    background-image: url('images/field_background_small.jpg'); /* Начинаем с маленького изображения */
+    background-image: url('https://i.pinimg.com/736x/6f/cc/0a/6fcc0a054a540f8a62c3eb2ab1f8b62a.jpg'); /* Начинаем с маленького изображения */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body {
 /* --- Медиазапрос для средних экранов (планшеты) --- */
 @media (min-width: 768px) {
     body {
-        background-image: url('images/field_background_medium.jpg'); /* Среднее изображение */
+        background-image: url('https://pic.rtbcdn.ru/video/2026-03-16/37/81/3781e5197e7fa103fcd79bea0c0eb68e.jpg'); /* Среднее изображение */
         /* background-size: cover; */ /* Можно оставить cover, или настроить иначе */
         /* background-position: center; */
         /* background-repeat: no-repeat; */
@@ -29,7 +29,7 @@ body {
 /* --- Медиазапрос для больших экранов (десктопы) --- */
 @media (min-width: 1200px) {
     body {
-        background-image: url('images/field_background.jpg'); /* Большое изображение */
+        background-image: url('https://pic.rtbcdn.ru/video/2026-03-16/37/81/3781e5197e7fa103fcd79bea0c0eb68e.jpg'); /* Большое изображение */
         /* background-size: cover; */
         /* background-position: center; */
         /* background-repeat: no-repeat; */
